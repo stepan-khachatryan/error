@@ -1,9 +1,9 @@
 var socket = io();
 var side = 12;
 function setup() {
-    noStroke();
+    // noStroke();
     createCanvas(60 * side, 60 * side);
-    background('#D0D0D0');
+    // background('#D0D0D0');
 }
 
 function produce(matrix) {
@@ -34,8 +34,5 @@ function produce(matrix) {
 
 }
 
-setInterval(
-    function () {
+
         socket.on('send matrix', produce)
-    },300
-)

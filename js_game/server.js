@@ -77,11 +77,11 @@ waterArr = [];
 bombArr = [];
 
 //modules
-Grass = require("./Grass");
-GrassEater = require("./GrassEater");
-Predator = require("./Predator");
-Water = require("./Water");
-Bomb = require("./Bomb");
+Grass = require("./grass");
+GrassEater = require("./grassEater");
+Predator = require("./predator");
+Water = require("./water");
+Bomb = require("./bomb");
 
 //functions
 function createObject() {

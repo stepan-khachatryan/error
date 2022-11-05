@@ -37,7 +37,7 @@ module.exports = class Bomb extends LivingCreature {
 
     eat() {
         let emptyCells = this.chooseCell(1,2,3,4)
-        console.log(emptyCells);
+        // console.log(emptyCells);
         if (emptyCells.length != 0) {
             for (var i in emptyCells) {
                 let newX = emptyCells[i][0]

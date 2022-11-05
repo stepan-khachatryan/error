@@ -6,26 +6,26 @@ module.exports = class Predator extends LivingCreature {
         this.energy = 30;
     }
 
-    getNewCoordinates() {
-        this.directions = [
-            [this.x - 1, this.y - 1],
-            [this.x, this.y - 1],
-            [this.x + 1, this.y - 1],
-            [this.x - 1, this.y],
-            [this.x + 1, this.y],
-            [this.x - 1, this.y + 1],
-            [this.x, this.y + 1],
-            [this.x + 1, this.y + 1]
-        ];
-    }
+    // getNewCoordinates() {
+    //     this.directions = [
+    //         [this.x - 1, this.y - 1],
+    //         [this.x, this.y - 1],
+    //         [this.x + 1, this.y - 1],
+    //         [this.x - 1, this.y],
+    //         [this.x + 1, this.y],
+    //         [this.x - 1, this.y + 1],
+    //         [this.x, this.y + 1],
+    //         [this.x + 1, this.y + 1]
+    //     ];
+    // }
 
-    chooseCell(character) {
-        this.getNewCoordinates()
-        return super.chooseCell(character)
-    }
+    // chooseCell(character) {
+    //     this.getNewCoordinates()
+    //     return super.chooseCell(character)
+    // }
 
     mul() {
-        let emptyCells = this.chooseCell(0)
+        let emptyCells = super.chooseCell(0)
         let newCell = emptyCells[Math.floor(Math.random() * emptyCells.length)];
         if (newCell) {
             let newX = newCell[0]
@@ -58,6 +58,8 @@ module.exports = class Predator extends LivingCreature {
         let newCell = emptyCells[Math.floor(Math.random() * emptyCells.length)];
         let emptyCells1 = this.chooseCell(4)
         let newCell1 = emptyCells1[Math.floor(Math.random() * emptyCells1.length)];
+        console.log(newCell);
+
         if (newCell) {
             this.energy++
             let newX = newCell[0]
