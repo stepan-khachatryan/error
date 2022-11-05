@@ -153,7 +153,7 @@ function addGrass() {
         var y = Math.floor(Math.random() * matrix.length)
         if (matrix[y][x] == 0) {
             matrix[y][x] = 1
-            var gr = new Grass(x, y, 1)
+            var gr = new Grass(x, y)
             grassArr.push(gr)
         }
     }

@@ -1,5 +1,5 @@
 var socket = io();
-var side = 12;
+var side = 11;
 function setup() {
     // noStroke();
     createCanvas(60 * side, 60 * side);

@@ -37,9 +37,7 @@ canvas{
     display: flex;
     justify-content: space-between;
     margin: 15px 0 30px;
-   
 }
 .buttons button:hover{
     background-color: #6082B6;
-    transition: all .2s;
 }
